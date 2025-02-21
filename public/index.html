@@ -74,11 +74,7 @@
                 return;
             }
 
-            const payload = {
-                tokens,
-                title,
-                body
-            };
+            const payload = { tokens, title, body };
 
             try {
                 const response = await fetch("https://push-notification-worker.push-notification-tah.workers.dev/send-multi-notification", {
